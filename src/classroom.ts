@@ -22,7 +22,7 @@ export function getAverageValue(grades: number[]) {
     return average;
 }
 
-export function getPassingGrades(grades) {
+export function getPassingGrades(grades: number[]) {
     let passingGrades = [];
     for (let i = 0; i < grades.length; i++) {
         if (grades[i] >= 10) {
@@ -34,7 +34,7 @@ export function getPassingGrades(grades) {
 }
 
 
-export function getFailingGrades(grades) {
+export function getFailingGrades(grades: number[]) {
     let failingGrades = [];
     for (let i = 0; i < grades.length; i++) {
         if (grades[i] >= 10) {
@@ -45,7 +45,7 @@ export function getFailingGrades(grades) {
 
 }
 
-export function getRaisedGrades(grades) {
+export function getRaisedGrades(grades: number[]) {
     let raisedGrades = [];
     for (let i = 0; i < grades.length; i++) {
         raisedGrades.push(grades[i] + 1);
